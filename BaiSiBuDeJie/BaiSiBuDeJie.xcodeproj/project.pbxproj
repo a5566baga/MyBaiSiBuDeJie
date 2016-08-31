@@ -13,9 +13,11 @@
 		BC79C7E41D76FD0900F4D39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC79C7E21D76FD0900F4D39D /* Main.storyboard */; };
 		BC79C7E61D76FD0900F4D39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC79C7E51D76FD0900F4D39D /* Assets.xcassets */; };
 		BC79C7E91D76FD0900F4D39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC79C7E71D76FD0900F4D39D /* LaunchScreen.storyboard */; };
+		D1528F55A0A1FD6CE991AAC4 /* libPods-BaiSiBuDeJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B18C11CC21A11AD31BEF270 /* libPods-BaiSiBuDeJie.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B18C11CC21A11AD31BEF270 /* libPods-BaiSiBuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaiSiBuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC79C7D61D76FD0900F4D39D /* BaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC79C7DA1D76FD0900F4D39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC79C7DC1D76FD0900F4D39D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		BC79C7E51D76FD0900F4D39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC79C7E81D76FD0900F4D39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC79C7EA1D76FD0900F4D39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA3B320325082A9A2889FDD /* Pods-BaiSiBuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
+		FAE23922C51BAB5CA5379938 /* Pods-BaiSiBuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1528F55A0A1FD6CE991AAC4 /* libPods-BaiSiBuDeJie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AAA6F8266E9ADD38ED5D2AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3B320325082A9A2889FDD /* Pods-BaiSiBuDeJie.debug.xcconfig */,
+				FAE23922C51BAB5CA5379938 /* Pods-BaiSiBuDeJie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DBD5C541830E58599FE3B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B18C11CC21A11AD31BEF270 /* libPods-BaiSiBuDeJie.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC79C7CD1D76FD0900F4D39D = {
 			isa = PBXGroup;
 			children = (
 				BC79C7D81D76FD0900F4D39D /* BaiSiBuDeJie */,
 				BC79C7D71D76FD0900F4D39D /* Products */,
+				1AAA6F8266E9ADD38ED5D2AB /* Pods */,
+				9DBD5C541830E58599FE3B68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC79C7ED1D76FD0900F4D39D /* Build configuration list for PBXNativeTarget "BaiSiBuDeJie" */;
 			buildPhases = (
+				043A821D648E059F4FDDE8BA /* [CP] Check Pods Manifest.lock */,
 				BC79C7D21D76FD0900F4D39D /* Sources */,
 				BC79C7D31D76FD0900F4D39D /* Frameworks */,
 				BC79C7D41D76FD0900F4D39D /* Resources */,
+				D4ED590F802573A917884497 /* [CP] Embed Pods Frameworks */,
+				FD9C6051D2FBD0271F5D44D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		043A821D648E059F4FDDE8BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4ED590F802573A917884497 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD9C6051D2FBD0271F5D44D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC79C7D21D76FD0900F4D39D /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		BC79C7EE1D76FD0900F4D39D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA3B320325082A9A2889FDD /* Pods-BaiSiBuDeJie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		BC79C7EF1D76FD0900F4D39D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE23922C51BAB5CA5379938 /* Pods-BaiSiBuDeJie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
@@ -300,6 +377,7 @@
 				BC79C7EF1D76FD0900F4D39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
