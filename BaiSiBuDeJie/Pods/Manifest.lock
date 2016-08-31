@@ -19,6 +19,7 @@ PODS:
   - FMDB/standard (2.6.2)
   - Masonry (1.0.1)
   - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - FMDB (~> 2.6.2)
   - Masonry (~> 1.0.0)
   - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
   - SDWebImage (~> 3.8.1)
   - SVProgressHUD (~> 2.0.3)
 
@@ -37,9 +39,10 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: 83dd869fa2cf895c7e26778299338f12acaea69f
+PODFILE CHECKSUM: 648629564107007d53c834f5bbbd704e1fffa7a4
 
 COCOAPODS: 1.1.0.beta.1
